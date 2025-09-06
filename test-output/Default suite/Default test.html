@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 06 12:38:09 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1404 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid mobile number", "User Login"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a invalid phone number&quot;)
+public void the_user_enters_a_invalid_phone_number() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace211973922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211973922'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a invalid phone number&quot;)
+public void the_user_enters_a_invalid_phone_number() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2002fc1d</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid OTP", "User Login"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and invalid OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1413886135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413886135'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and invalid OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2002fc1d</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "User Login"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should be logged in successfully&quot;)
+public void the_user_should_be_logged_in_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the dashboard should be displayed&quot;)
+public void the_dashboard_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace669053685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace669053685'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should be logged in successfully&quot;)
+public void the_user_should_be_logged_in_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the dashboard should be displayed&quot;)
+public void the_dashboard_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2002fc1d</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid OTP", "User Login"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and invalid OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace278262050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace278262050'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and invalid OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2002fc1d</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid OTP", "User Login"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and invalid OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1732410217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1732410217'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the login page&quot;)
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters a valid phone number and invalid OTP&quot;)
+public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;an error message {string} should be shown&quot;)
+public void an_error_message_should_be_shown(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2002fc1d</td></tr>
+</table><p>
+</body>
+</html>
