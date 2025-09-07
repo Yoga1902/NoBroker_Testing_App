@@ -1,99 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-06T12:38:09 IST" name="Default suite" finished-at="2025-09-06T12:38:10 IST" duration-ms="1404">
+  <suite started-at="2025-09-07T13:46:48 IST" name="Default suite" finished-at="2025-09-07T13:47:44 IST" duration-ms="56031">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-06T12:38:09 IST" name="Default test" finished-at="2025-09-06T12:38:10 IST" duration-ms="1404">
+    <test started-at="2025-09-07T13:46:48 IST" name="Default test" finished-at="2025-09-07T13:47:44 IST" duration-ms="56031">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:09 IST" name="setUpClass" finished-at="2025-09-06T12:38:10 IST" duration-ms="1001" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-07T13:46:48 IST" name="setUpClass" finished-at="2025-09-07T13:46:50 IST" duration-ms="1520" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@fac80]]>
+                <![CDATA[org.testng.TestRunner@60e06f7d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-06T12:38:10 IST" duration-ms="197" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Login"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'the user is on the login page' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and OTP")
-public void the_user_enters_a_valid_phone_number_and_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user should be logged in successfully")
-public void the_user_should_be_logged_in_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the dashboard should be displayed")
-public void the_dashboard_should_be_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the login page' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and OTP")
-public void the_user_enters_a_valid_phone_number_and_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user should be logged in successfully")
-public void the_user_should_be_logged_in_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the dashboard should be displayed")
-public void the_dashboard_should_be_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-06T12:38:10 IST" duration-ms="19" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-07T13:46:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T13:47:00 IST" duration-ms="10025" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,56 +34,10 @@ at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/No
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a invalid phone number")
-public void the_user_enters_a_invalid_phone_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a invalid phone number")
-public void the_user_enters_a_invalid_phone_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-06T12:38:10 IST" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-07T13:47:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T13:47:10 IST" duration-ms="9931" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,60 +50,14 @@ at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/No
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and invalid OTP")
-public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and invalid OTP")
-public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-06T12:38:10 IST" duration-ms="13" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-07T13:47:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T13:47:44 IST" duration-ms="33753" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with invalid OTP"]]>
+                <![CDATA["Login with valid credentials"]]>
               </value>
             </param>
             <param index="1">
@@ -230,118 +66,10 @@ at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/No
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and invalid OTP")
-public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and invalid OTP")
-public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-06T12:38:10 IST" duration-ms="14" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with invalid OTP"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Login"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and invalid OTP")
-public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters a valid phone number and invalid OTP")
-public void the_user_enters_a_valid_phone_number_and_invalid_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("an error message {string} should be shown")
-public void an_error_message_should_be_shown(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.the user is on the login page(file:///C:/Users/yogab/eclipse-workspace/NoBroker_Testing_App/src/test/resources/features/login.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-06T12:38:10 IST" name="tearDownClass" finished-at="2025-09-06T12:38:10 IST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2002fc1d]" started-at="2025-09-07T13:47:44 IST" name="tearDownClass" finished-at="2025-09-07T13:47:44 IST" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
