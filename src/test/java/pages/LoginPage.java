@@ -4,7 +4,6 @@ import java.time.Duration;
 import java.util.Scanner;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,10 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 
 import objectrepository.Locators;
-import utils.Reporter;
+
+
 
 public class LoginPage {
 
@@ -30,26 +29,31 @@ public class LoginPage {
 	}
 
 	public void clickLogin() {
-		driver.findElement(Locators.loginButton).click();
+		driver.findElement(objectrepository.Locators.loginButton).click();
 	}
 
-	public void enterMobileNumber(String mobile) {
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		driver.findElement(Locators.inputNumber).sendKeys(mobile);
+	public void enterMobileNumber(String number) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebElement phoneInput = wait.until(
+	        ExpectedConditions.visibilityOfElementLocated(By.id("signUp-phoneNumber"))
+	    );
+	    phoneInput.clear();
+	    phoneInput.sendKeys(number);
 	}
+
 
     public void clickContinue() {
-        driver.findElement(Locators.continueButton).click();
+        driver.findElement(objectrepository.Locators.continueButton).click();
     }
 
 	public void enterOtp(String otp) {
-		WebElement otpField = driver.findElement(Locators.otpInputs);
+		WebElement otpField = driver.findElement(objectrepository.Locators.otpInputs);
 		otpField.sendKeys(otp);
 	}
 	
 	public void enterOtpManually(WebDriver driver) {
 	    Scanner sc = new Scanner(System.in);
-	    System.out.print("Enter OTP from SMS: ");
+	    System.out.print("Enter OTP received in mobile SMS : ");
 	    String otp = sc.nextLine();
 
 	    // Wait until OTP input box is visible
@@ -96,6 +100,18 @@ public class LoginPage {
 			return false;
 		}
 	}
-	
+    public void clickResendOtp() {
+        driver.findElement(objectrepository.Locators.resendOtpLink).click();
+    }
+
+    public boolean pageLoadedSuccessfully() {
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.loginButton));
+            return true;
+        } catch (TimeoutException te) {
+            return false;
+        }
+    }
+
 	
 }
