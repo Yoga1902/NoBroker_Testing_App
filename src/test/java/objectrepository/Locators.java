@@ -9,6 +9,7 @@ public class Locators {
 	public static By inputNumber=By.id("signUp-phoneNumber");
 	public static By continueButton=By.id("signUpSubmit");
 	public static By otpInputs = By.xpath("//input[@aria-label='Please enter verification code. Digit 1']");
+<<<<<<< HEAD
 
 	public static By resendOtpLink = By.xpath("//*[@id=\"login-signup-form\"]/div[4]/div/div/div[3]/div[2]");
 	public static By propertyButton= By.xpath("//*[@id=\"pypAd\"]/button");
@@ -21,4 +22,6 @@ public class Locators {
 	public static By Propertypost = By.xpath("//button[contains(text(),'Post a New Property')]");
 
 
+=======
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
 }

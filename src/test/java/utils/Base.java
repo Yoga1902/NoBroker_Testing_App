@@ -11,10 +11,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
 	
+<<<<<<< HEAD
 	static final int TIME=1000;
 	public static WebDriver driver;
 
 	public void launchBrowser() {
+=======
+	static final int TIME=2000;
+	public static WebDriver driver;
+
+	public void lanchBrowser() {
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
 
 		Properties prop = PropertyReader.readProperties();
 
@@ -38,6 +45,7 @@ public class Base {
 		driver.get(prop.getProperty("URL"));
 	}
 	public static void sleep(){
+<<<<<<< HEAD
 		sleep(TIME);
 	}public static void sleep(int millis) {
 	    try {
@@ -47,3 +55,13 @@ public class Base {
 	    }
 	}
 }
+=======
+		try {
+			Thread.sleep(TIME);
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce

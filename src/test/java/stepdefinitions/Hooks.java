@@ -24,7 +24,10 @@ public class Hooks extends Base {
 		extReports.attachReporter(spark);
 	}
 	
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
 	@AfterAll
 	public static void afterAll(){
 		extReports.flush();
@@ -32,7 +35,11 @@ public class Hooks extends Base {
 	
 	@Before
 	public void setup(Scenario scenario){
+<<<<<<< HEAD
 		launchBrowser();
+=======
+		lanchBrowser();
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
 		extTest=extReports.createTest(scenario.getName());
 	}
 	
@@ -41,5 +48,8 @@ public class Hooks extends Base {
 		Base.sleep();
 		driver.quit();
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
 }

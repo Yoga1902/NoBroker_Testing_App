@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Testing_Project_NoBroker</name>
+=======
+	<name>NoBroker_Testing_App</name>
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
 	<comment></comment>
 	<projects>
 	</projects>

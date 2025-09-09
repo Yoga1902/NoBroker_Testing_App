@@ -10,6 +10,7 @@ Feature: User Login
 	When the user enters a valid phone number
 	And the user enters the invalid OTP
     Then an invalid otp message should be shown
+<<<<<<< HEAD
     
   Scenario: OTP Expiry and Resend
     Given the user is on the login page
@@ -22,8 +23,20 @@ Feature: User Login
     Given the user is on the login page
     Then the login page should be loaded successfully
     
+=======
+
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
   Scenario: Login with valid credentials
     Given the user is on the login page
     When the user enters a valid phone number
 	And the user enters the valid OTP
+<<<<<<< HEAD
     Then the user should be logged in successfully
+=======
+    Then the user should be logged in successfully
+    
+   
+
+
+
+>>>>>>> 7f55e8c1ecec4269fb2e56e35dd8805186458bce
