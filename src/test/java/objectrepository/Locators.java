@@ -19,6 +19,3 @@ public class Locators {
 	public static By startPostingButton = By.xpath("//button[contains(text(),'Start Posting Your Ad For FREE')]");
 	public static By propertyDetailsForm = By.xpath("//h1[contains(text(),'Property Details')]"); 
 	public static By Propertypost = By.xpath("//button[contains(text(),'Post a New Property')]");
-
-
-}
