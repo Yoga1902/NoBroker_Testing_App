@@ -37,12 +37,11 @@ public class Base {
 		}
 		driver.get(prop.getProperty("URL"));
 	}
-	public static void sleep(){
-		try {
-			Thread.sleep(TIME);
-		}
-		catch(InterruptedException e) {
-			e.printStackTrace();
-		}
+	public static void sleep(int milliseconds) {
+	    try {
+	        Thread.sleep(milliseconds);
+	    } catch (InterruptedException e) {
+	        Thread.currentThread().interrupt();
+	    }
 	}
 }

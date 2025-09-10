@@ -65,7 +65,7 @@ public class LoginSteps {
 	
     @When("waits until the OTP expires and clicks on resend button")
     public void waits_until_the_otp_expires_and_clicks_on_resend_button() {
-        Base.sleep(); // wait until OTP expiry (adjust based on actual timeout)
+        Base.sleep(1000); // wait until OTP expiry (adjust based on actual timeout)
         loginPage.clickResendOtp();
     }
 
@@ -79,9 +79,9 @@ public class LoginSteps {
     @When("the user enters the valid OTP")
 	public void the_user_enters_the_valid_otp() {
 		loginPage.enterOtpManually(driver); 
-		Base.sleep();
+		Base.sleep(1000);
 		loginPage.clickContinue();
-		Base.sleep();
+		Base.sleep(1000);
 	}
 
 	@Then("the user should be logged in successfully")

@@ -16,7 +16,7 @@ public class Hooks extends Base {
 
     static ExtentSparkReporter spark;
     static ExtentReports extReports;
-    static ExtentTest extTest;
+    public static ExtentTest extTest;
     
     // Instance variables for specific hook functionality
     LoginPage loginPage;
@@ -83,7 +83,7 @@ public class Hooks extends Base {
     // General teardown for all scenarios
     @After(order = 1)
     public void tearDown(){
-        Base.sleep();
+        Base.sleep(1000);
         
         // Only quit driver if not maintaining session for property scenarios
         // Check if current scenario has @property tag

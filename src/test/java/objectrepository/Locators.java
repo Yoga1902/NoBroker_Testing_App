@@ -19,3 +19,13 @@ public class Locators {
 	public static By startPostingButton = By.xpath("//button[contains(text(),'Start Posting Your Ad For FREE')]");
 	public static By propertyDetailsForm = By.xpath("//h1[contains(text(),'Property Details')]"); 
 	public static By Propertypost = By.xpath("//button[contains(text(),'Post a New Property')]");
+	//HomePage
+	public static By searchCity=By.id("searchCity");
+	public static By searchLocality=By.id("listPageSearchLocality");
+	public static By searchButton=By.xpath("//button[@type='button' and contains(@class,'prop-search-button')]");
+	public static By historySection = By.cssSelector("div.QuickBook_autoSearchPopover__g1zGj"); 
+	public static By historyItems   = By.cssSelector("div.QuickBook_autoSearchPopover__g1zGj div");
+
+
+
+}
