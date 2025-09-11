@@ -10,18 +10,18 @@ import com.aventstack.extentreports.ExtentTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.HomePage;
+import pages.RentPage;
 
-public class HomePageSteps {
+public class RentPageSteps {
 	
 	WebDriver driver = Hooks.driver;
 	ExtentTest extTest = Hooks.extTest;
 	
-	HomePage homePage;
+	RentPage homePage;
 	
 	@Given("the user selects location {string}")
 	public void the_user_selects_location(String location) {
-		homePage = new HomePage(driver, extTest);
+		homePage = new RentPage(driver, extTest);
 	    homePage.selectCity(location);
 	}
 	

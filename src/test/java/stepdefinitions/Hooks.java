@@ -44,6 +44,15 @@ public class Hooks extends Base {
             loginPage = new LoginPage(driver, extTest);
         }
     }
+    @Before("@rent")
+	public void loginBeforeHome(Scenario scenario) {
+		loginPage = new LoginPage(driver, extTest);
+		loginPage.clickLogin();
+		loginPage.enterMobileNumber("9003855489");  
+		loginPage.enterOtpManually(driver); 
+		loginPage.clickContinue();
+	}
+   
 
     // Before each LOGIN feature scenario - ensure fresh start
     @Before(value = "@login", order = 2)

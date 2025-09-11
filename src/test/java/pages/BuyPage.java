@@ -1,7 +1,6 @@
 package pages;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,17 +15,18 @@ import com.aventstack.extentreports.Status;
 import objectrepository.Locators;
 import utils.Base;
 
-public class HomePage {
+public class BuyPage {
 	WebDriver driver;
 	WebDriverWait wait;
 	ExtentTest extTest;
 
-	public HomePage(WebDriver driver, ExtentTest extTest) {
+
+	public BuyPage(WebDriver driver, ExtentTest extTest) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		this.extTest = extTest;
 	}
-
+	
 	public void selectCity(String cityName) {
 		try {
 			// Click the dropdown to open options
@@ -41,7 +41,6 @@ public class HomePage {
 			extTest.log(Status.FAIL, "Failed to select city: " + e.getMessage());
 		}
 	}
-
 	public void enterLocality(String locality) {
 		try {
 			WebElement localityInput = wait
@@ -58,7 +57,7 @@ public class HomePage {
 			extTest.log(Status.FAIL, "Failed to select locality: " + e.getMessage());
 		}
 	}
-
+	
 	public void clickSearchButton() {
 		try {
 			driver.findElement(Locators.searchButton).click();
@@ -68,7 +67,6 @@ public class HomePage {
 			extTest.log(Status.FAIL, "Failed to click search button: " + e.getMessage());
 		}
 	}
-
 	public boolean isLocalityErrorDisplayed() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -80,10 +78,19 @@ public class HomePage {
 			return false;
 		}
 	}
-
-	public boolean redirectedRentPage() {
+	public void clickBuyButton() {
 		try {
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@itemprop='item']")));
+			driver.findElement(Locators.BuyButton).click();
+
+			extTest.log(Status.PASS, "Buy button clicked successfully");
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "Failed to click Buy button: " + e.getMessage());
+		}
+	}
+	
+	public boolean redirectedBuyPage() {
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='selectedLocalities']")));
 			extTest.log(Status.PASS, "Redirected sucessfully");
 			return true;
 		} catch (Exception e) {
@@ -91,26 +98,59 @@ public class HomePage {
 			return false;
 		}
 	}
+	public void clickApartmentButton() {
+	    try {
+	        WebElement aptBtn = wait.until(
+	            ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Apartment']"))
+	        );
+	        aptBtn.click();
+	        extTest.log(Status.PASS, "Property Type selected successfully");
+	    } catch (Exception e) {
+	        extTest.log(Status.FAIL, "Failed to select property type: " + e.getMessage());
+	    }
+	}
 
-	public boolean isHistorySectionVisible() {
+	public void clickPropertyType() {
 		try {
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.historySection));
-			return true;
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			driver.findElement(Locators.PropertyStatus).click();
+
+			extTest.log(Status.PASS, "Property Status selected successfully");
 		} catch (Exception e) {
-			return false;
+			extTest.log(Status.FAIL, "Failed to select Property Status button: " + e.getMessage());
 		}
 	}
-	public boolean isContinueLastSearchVisible() {
-	    try {
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(
-	            By.xpath("//div[text()='Continue Last  Search']")
-	        ));
-	        extTest.log(Status.PASS, "Continue Last Search section is visible");
-	        return true;
-	    } catch (Exception e) {
-	        extTest.log(Status.FAIL, "Continue Last Search section not visible: " + e.getMessage());
-	        return false;
-	    }
+	public void clickApartmentType() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			driver.findElement(Locators.ApartmentType).click();
+
+			extTest.log(Status.PASS, "Apartment Type selected successfully");
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "Failed to select Apartment Type button: " + e.getMessage());
+		}
+	}
+	public void clickPriceRange() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			driver.findElement(Locators.PriceRangeButton).click();
+
+			extTest.log(Status.PASS, "Price range clicked successfully");
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "Failed to click Price Range button: " + e.getMessage());
+		}
+	}
+	public boolean isPropertyDisplayed() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='listCardContainer']")));
+			extTest.log(Status.PASS, "Property Displayed sucessfully");
+			return true;
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "Fail to Display" + e.getMessage());
+			return false;
+		}
+
 	}
 
 }

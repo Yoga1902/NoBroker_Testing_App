@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sept 10, 2025 07:11:50 pm</span></a>
+<a href="#"><span class="badge badge-primary">Sept 11, 2025 01:33:18 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Missing landmark</p>
             <p class="text-sm">
-              <span>7:11:56 pm</span> / <span>00:00:05:309</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>1:33:23 pm</span> / <span>00:01:32:128</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Missing landmark</h5>
-<span class='badge badge-success'>09.10.2025 7:11:56 pm</span>
-<span class='badge badge-danger'>09.10.2025 7:12:01 pm</span>
-<span class='badge badge-default'>00:00:05:309</span>
+<h5 class="test-status text-pass">Missing landmark</h5>
+<span class='badge badge-success'>09.11.2025 1:33:23 pm</span>
+<span class='badge badge-danger'>09.11.2025 1:34:55 pm</span>
+<span class='badge badge-default'>00:01:32:128</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -104,38 +104,36 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:11:58 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:34:52 pm</td>
         <td>
-          Failed to select city: stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.81)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6e527620a9652c59387bbc3fd86a9b38, clickElement {id=f.CA55A6575ED1E048FCC84722B1C00E35.d.17C7EC6F509C6DF90C6966AF4AE4C126.e.81}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yogab\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61738}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61738/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6e527620a9652c59387bbc3fd86a9b38)] -> xpath: //div[contains(@class,'nb-select__menu')]//div[text()='Mumbai']]
-Session ID: 6e527620a9652c59387bbc3fd86a9b38
+          Buy button clicked successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:01 pm</td>
+        <td>1:34:52 pm</td>
+        <td>
+          City selected: Mumbai
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:34:54 pm</td>
         <td>
           Locality selected: 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:01 pm</td>
+        <td>1:34:55 pm</td>
         <td>
           Search button clicked successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:01 pm</td>
+        <td>1:34:55 pm</td>
         <td>
           Alert message displayed
         </td>
@@ -145,25 +143,25 @@ Session ID: 6e527620a9652c59387bbc3fd86a9b38
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Valid landmark</p>
             <p class="text-sm">
-              <span>7:12:07 pm</span> / <span>00:00:16:776</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>1:35:00 pm</span> / <span>00:00:42:974</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Valid landmark</h5>
-<span class='badge badge-success'>09.10.2025 7:12:07 pm</span>
-<span class='badge badge-danger'>09.10.2025 7:12:24 pm</span>
-<span class='badge badge-default'>00:00:16:776</span>
+<h5 class="test-status text-pass">Valid landmark</h5>
+<span class='badge badge-success'>09.11.2025 1:35:00 pm</span>
+<span class='badge badge-danger'>09.11.2025 1:35:43 pm</span>
+<span class='badge badge-default'>00:00:42:974</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -175,114 +173,73 @@ Session ID: 6e527620a9652c59387bbc3fd86a9b38
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:12:19 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:35:35 pm</td>
         <td>
-          Failed to select city: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(@class,'nb-select__menu')]//div[text()='Chennai'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yogab\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54993/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f770874f403c3d30d4beb69454006b77
+          Buy button clicked successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:21 pm</td>
+        <td>1:35:35 pm</td>
+        <td>
+          City selected: Chennai
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:35:38 pm</td>
         <td>
           Locality selected: Velachery
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:22 pm</td>
+        <td>1:35:38 pm</td>
         <td>
           Search button clicked successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:24 pm</td>
-        <td>
-          Redirected sucessfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">View previous searches after new search</p>
-            <p class="text-sm">
-              <span>7:12:29 pm</span> / <span>00:00:09:945</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">View previous searches after new search</h5>
-<span class='badge badge-success'>09.10.2025 7:12:29 pm</span>
-<span class='badge badge-danger'>09.10.2025 7:12:39 pm</span>
-<span class='badge badge-default'>00:00:09:945</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:12:31 pm</td>
-        <td>
-          Failed to select city: stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.81)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3e2a3684a83cdbd7ecf800ac8cf38f87, clickElement {id=f.80F31CAD112F11DB905CC429108A8043.d.2AD2792FBFEFF2FD93BF93523C04A603.e.5563}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yogab\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51224}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51224/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3e2a3684a83cdbd7ecf800ac8cf38f87)] -> xpath: //div[contains(@class,'nb-select__menu')]//div[text()='Chennai']]
-Session ID: 3e2a3684a83cdbd7ecf800ac8cf38f87
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:34 pm</td>
-        <td>
-          Locality selected: Velachery
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:35 pm</td>
-        <td>
-          Search button clicked successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:37 pm</td>
+        <td>1:35:40 pm</td>
         <td>
           Redirected sucessfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:12:39 pm</td>
+        <td>1:35:40 pm</td>
         <td>
-          Continue Last Search section is visible
+          Property Type selected successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:35:41 pm</td>
+        <td>
+          Property Status selected successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:35:42 pm</td>
+        <td>
+          Apartment Type selected successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:35:43 pm</td>
+        <td>
+          Price range clicked successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:35:43 pm</td>
+        <td>
+          Property Displayed sucessfully
         </td>
       </tr>
   </tbody>
@@ -304,25 +261,25 @@ Session ID: 3e2a3684a83cdbd7ecf800ac8cf38f87
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sept 10, 2025 07:11:50 pm</h3>
+<h3>Sept 11, 2025 01:33:18 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sept 10, 2025 07:12:41 pm</h3>
+<h3>Sept 11, 2025 01:35:45 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -338,12 +295,12 @@ Session ID: 3e2a3684a83cdbd7ecf800ac8cf38f87
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>3</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -361,9 +318,9 @@ Session ID: 3e2a3684a83cdbd7ecf800ac8cf38f87
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='76%'><b>10</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> events passed</small></div>
 <div>
-<small data-tooltip='23%'><b>3</b> events failed,
+<small data-tooltip='0%'><b>0</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -380,7 +337,7 @@ Session ID: 3e2a3684a83cdbd7ecf800ac8cf38f87
 </div></div>
 <script>
 var timeline = {
-"Missing landmark":5.309,"Valid landmark":16.776,"View previous searches after new search":9.945
+"Missing landmark":92.128,"Valid landmark":42.974
 };
 </script>
 <div class="row">
@@ -389,8 +346,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 3,
+passParent: 2,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -406,8 +363,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 10,
-failEvents: 3,
+passEvents: 15,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

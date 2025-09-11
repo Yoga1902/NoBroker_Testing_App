@@ -25,7 +25,15 @@ public class Locators {
 	public static By searchButton=By.xpath("//button[@type='button' and contains(@class,'prop-search-button')]");
 	public static By historySection = By.cssSelector("div.QuickBook_autoSearchPopover__g1zGj"); 
 	public static By historyItems   = By.cssSelector("div.QuickBook_autoSearchPopover__g1zGj div");
-
+	
+	//BuyPage
+    public static By BuyButton = By.xpath("//div[text()='Buy']");
+    public static By ApartmentButton= By.xpath("//span[text()='Apartment']");
+    public static By PropertyStatus= By.xpath("//*[@id='prop_status_2']");
+    public static By ApartmentType=By.xpath("//div[text()='2 BHK']");
+    public static By PriceRangeButton = By.xpath("//*[@class='rc-slider nb-slider']");
+    
+    
 
 
 }

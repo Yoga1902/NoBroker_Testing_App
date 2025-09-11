@@ -1,7 +1,7 @@
-Feature: Home Page Search and Navigation
+Feature: Rent Page Search and Navigation
 
 
-  @home
+  @rent
   Scenario Outline: Missing landmark
     Given the user selects location "<location>"
     And leaves the landmark field blank
@@ -12,7 +12,7 @@ Feature: Home Page Search and Navigation
       | location |
       | Mumbai   |
 
-  @home
+  @rent
   Scenario Outline: Valid landmark
     Given the user selects location "<location>"
     And enters landmark "<landmark>"
@@ -23,7 +23,7 @@ Feature: Home Page Search and Navigation
       | location | landmark  |
       | Chennai  | Velachery |
       
-  @home
+  @rent
   Scenario: View previous searches after new search
    Given the user selects location "<location>"
     And enters landmark "<landmark>"
