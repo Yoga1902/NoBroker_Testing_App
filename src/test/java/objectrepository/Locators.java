@@ -13,12 +13,16 @@ public class Locators {
 	public static By resendOtpLink = By.xpath("//*[@id=\"login-signup-form\"]/div[4]/div/div/div[3]/div[2]");
 	public static By propertyButton= By.xpath("//*[@id=\"pypAd\"]/button");
 	
+
+	//PostProperty Page
+	public static By propertyButton1= By.xpath("//*[@id=\"pypAd\"]/button");
 	public static By propertypage= By.xpath("//*[@id=\"app\"]/div/div/div[1]/div[1]/div/div[1]/h1");
-	
 	public static By cityDropdown = By.xpath("//input[@placeholder='Select City']");
 	public static By startPostingButton = By.xpath("//button[contains(text(),'Start Posting Your Ad For FREE')]");
 	public static By propertyDetailsForm = By.xpath("//h1[contains(text(),'Property Details')]"); 
 	public static By Propertypost = By.xpath("//button[contains(text(),'Post a New Property')]");
+	public static By clickpostpropertybutton= By.xpath("//button[text()='Post Free Property Ad']");
+	public static By clickpostnowbutton = By.xpath("//button[text()='Post Now']");
 	//HomePage
 	public static By searchCity=By.id("searchCity");
 	public static By searchLocality=By.id("listPageSearchLocality");
