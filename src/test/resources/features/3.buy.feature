@@ -1,7 +1,7 @@
 Feature: Buy Page Search and Navigation
 
 
-  @rent
+ 
   Scenario Outline: Missing landmark
     Given the user click the buy
     When the user selects location "<location>"
@@ -12,7 +12,7 @@ Feature: Buy Page Search and Navigation
     Examples:
       | location |
       | Mumbai   |
-   @rent
+  
    Scenario Outline: Valid landmark
     Given the user click the buy
     When the user selects location "<location>"
@@ -24,7 +24,23 @@ Feature: Buy Page Search and Navigation
     And the clicks Apartment type
     And the user clicks the Price Range
     Then the Property should be displayed
+    
+        
     Examples:
+      | location | landmark  |
+      | Chennai  | Velachery |
+      
+
+  Scenario: View previous searches after new search
+   Given the user selects location "<location>"
+    And enters landmark "<landmark>"
+    And clicks on search button
+    Then the user should be redirected to the Buy Page
+    And the user returns to the home page
+    Then the previous search should appear in search history
+
+    
+   Examples:
       | location | landmark  |
       | Chennai  | Velachery |
     

@@ -1,8 +1,9 @@
 Feature: Rent Page Search and Navigation
 
 
-  @rent
+ 
   Scenario Outline: Missing landmark
+  	Given the user click the rent
     Given the user selects location "<location>"
     And leaves the landmark field blank
     And clicks on search button
@@ -12,19 +13,21 @@ Feature: Rent Page Search and Navigation
       | location |
       | Mumbai   |
 
-  @rent
+  
   Scenario Outline: Valid landmark
+  	Given the user click the rent
     Given the user selects location "<location>"
     And enters landmark "<landmark>"
     And clicks on search button
     Then the user should be redirected to the Rent Page
 
     Examples:
-      | location | landmark  |
-      | Chennai  | Velachery |
+      | location   | landmark  |
+      | Chennai    | Velachery |
       
-  @rent
+  
   Scenario: View previous searches after new search
+   Given the user click the rent
    Given the user selects location "<location>"
     And enters landmark "<landmark>"
     And clicks on search button
@@ -34,7 +37,7 @@ Feature: Rent Page Search and Navigation
 
     
    Examples:
-      | location | landmark  |
-      | Chennai  | Velachery |
+      | location   | landmark  |
+      | Chennai    | Velachery |
       
       

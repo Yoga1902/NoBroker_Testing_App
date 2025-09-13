@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.And;
 import pages.BuyPage;
-import pages.PropertyPage;
+import pages.PostPropertyPage;
 import pages.RentPage;
 import utils.Base;
 
@@ -26,7 +26,7 @@ public class BuySteps {
     	buypage.clickBuyButton();
     }
     @Then("the user should be redirected to the Buy Page")
-	public void the_user_should_be_redirected_to_the_buy_page() {
+	public void the_user_should_be_redirected_to_the_Buy_page() {
 		boolean displayPropertyCard = buypage.redirectedBuyPage();
 	    Assert.assertTrue(displayPropertyCard);
 	}
@@ -51,5 +51,15 @@ public class BuySteps {
     	boolean displayPropertyItems = buypage.isPropertyDisplayed();
 	    Assert.assertTrue(displayPropertyItems);
     	
+    }
+    @Then("the user clicks the get Owner Details")
+    public void the_user_clicks_the_get_Owner_Details() throws Exception {
+    	buypage.clickgetOwnerDetails();
+    }
+    
+    @Then("the Contact Page should be displayed")
+    public void the_Contact_Page_should_be_displayed(){
+    	boolean display = buypage.isdisplayConfimationPage();
+	    Assert.assertTrue(display);
     }
 }

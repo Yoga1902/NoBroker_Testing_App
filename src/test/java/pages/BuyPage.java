@@ -3,6 +3,7 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -152,5 +153,49 @@ public class BuyPage {
 		}
 
 	}
+
+	public void clickgetOwnerDetails() {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	        By ownerBtnLocator = By.xpath("//button[contains(text(),'Get Owner Details')]");
+
+	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(ownerBtnLocator));
+
+	        // Scroll into view before clicking
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
+	        element.click();
+
+	        extTest.log(Status.PASS, "Clicked on Get Owner Details button successfully");
+	    } catch (Exception e) {
+	        extTest.log(Status.FAIL, "Failed to click on Get Owner Details: " + e.getMessage());
+	        throw e; // rethrow so test fails
+	    }
+	}
+
+
+	public boolean isdisplayConfimationPage() {
+		
+	    try {
+	    	
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+	        By contactPageLocator = By.xpath("//div[contains(text(),'Owner Contact')]");
+
+	        // Scroll into view before waiting
+	        WebElement element = driver.findElement(contactPageLocator);
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
+	        wait.until(ExpectedConditions.visibilityOfElementLocated(contactPageLocator));
+
+	        extTest.log(Status.PASS, "Contact details displayed successfully");
+	        return true;
+	    } catch (Exception e) {
+	        extTest.log(Status.FAIL, "Failed to display : " + e.getMessage());
+	        return false;
+	    }
+	}
+
+
 
 }

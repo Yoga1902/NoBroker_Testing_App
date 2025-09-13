@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,38 +18,42 @@ public class RentPageSteps {
 	WebDriver driver = Hooks.driver;
 	ExtentTest extTest = Hooks.extTest;
 	
-	RentPage homePage;
+	RentPage rentPage=new RentPage(driver, extTest);
+    
+	@Given("the user click the rent")
+	public void the_user_click_the_rent() {
+		rentPage.clickRentButton();
+	}
 	
-	@Given("the user selects location {string}")
+	@When("the user selects location {string}")
 	public void the_user_selects_location(String location) {
-		homePage = new RentPage(driver, extTest);
-	    homePage.selectCity(location);
+		rentPage.selectCity(location);
 	}
 	
 	@When("enters landmark {string}")
 	public void enters_landmark(String locality) {
-	    homePage.enterLocality(locality);
+		rentPage.enterLocality(locality);
 	}
 	
 	@When("clicks on search button")
 	public void clicks_on_search_button() {
-		homePage.clickSearchButton();
+		rentPage.clickSearchButton();
 	}
 	
 	@Then("an error message should be displayed")
 	public void an_error_message_should_be_displayed() {
-		boolean errorShown = homePage.isLocalityErrorDisplayed();
+		boolean errorShown = rentPage.isLocalityErrorDisplayed();
 	    Assert.assertTrue(errorShown);
 	}
 	
 	@When("leaves the landmark field blank")
 	public void leaves_the_landmark_field_blank() {
-		homePage.enterLocality("");
+		rentPage.enterLocality("");
 	}
 	
 	@Then("the user should be redirected to the Rent Page")
 	public void the_user_should_be_redirected_to_the_rent_page() {
-		boolean displayPropertyCard = homePage.redirectedRentPage();
+		boolean displayPropertyCard = rentPage.redirectedRentPage();
 	    Assert.assertTrue(displayPropertyCard);
 	}
 	
@@ -60,7 +65,7 @@ public class RentPageSteps {
 
 	@Then("the previous search should appear in search history")
 	public void the_previous_search_should_appear_in_search_history() {
-	    Assert.assertTrue(homePage.isContinueLastSearchVisible());
+	    Assert.assertTrue(rentPage.isContinueLastSearchVisible());
 	}
 
 	

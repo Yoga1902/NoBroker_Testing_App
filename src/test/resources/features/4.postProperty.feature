@@ -1,5 +1,5 @@
 Feature: NoBroker Posting Property Flow
-@rent
+@login
 Scenario Outline: Navigation of Homepage to Posting the Property and verifying
 
 When the owner clicks on Post Free Property Ad

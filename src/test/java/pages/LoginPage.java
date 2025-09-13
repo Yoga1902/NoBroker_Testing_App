@@ -100,8 +100,14 @@ public class LoginPage {
 			return false;
 		}
 	}
+	
+    
     public void clickResendOtp() {
-        driver.findElement(objectrepository.Locators.resendOtpLink).click();
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        // 1. Click the dropdown container to activate input
+        WebElement resendOTP = wait.until(ExpectedConditions.elementToBeClickable(Locators.resendOtpLink));
+        resendOTP.click();
     }
 
     public boolean pageLoadedSuccessfully() {
