@@ -25,6 +25,10 @@ public class BuySteps {
     public void the_user_click_the_buy() {
     	buypage.clickBuyButton();
     }
+    @When("the user select location {string}")
+    public void the_user_select_location(String city) {
+    	buypage.selectCity(city);
+    }
     @Then("the user should be redirected to the Buy Page")
 	public void the_user_should_be_redirected_to_the_Buy_page() {
 		boolean displayPropertyCard = buypage.redirectedBuyPage();

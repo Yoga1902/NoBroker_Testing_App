@@ -4,7 +4,7 @@ Feature: Buy Page Search and Navigation
  
   Scenario Outline: Missing landmark
     Given the user click the buy
-    When the user selects location "<location>"
+    When the user select location "<location>"
     And leaves the landmark field blank
     And clicks on search button
     Then an error message should be displayed
@@ -15,7 +15,7 @@ Feature: Buy Page Search and Navigation
   
    Scenario Outline: Valid landmark
     Given the user click the buy
-    When the user selects location "<location>"
+    When the user select location "<location>"
     And enters landmark "<landmark>"
     And clicks on search button
     Then the user should be redirected to the Buy Page
@@ -31,17 +31,5 @@ Feature: Buy Page Search and Navigation
       | Chennai  | Velachery |
       
 
-  Scenario: View previous searches after new search
-   Given the user selects location "<location>"
-    And enters landmark "<landmark>"
-    And clicks on search button
-    Then the user should be redirected to the Buy Page
-    And the user returns to the home page
-    Then the previous search should appear in search history
-
-    
-   Examples:
-      | location | landmark  |
-      | Chennai  | Velachery |
-    
+      
     

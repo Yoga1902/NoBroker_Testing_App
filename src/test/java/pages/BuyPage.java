@@ -29,19 +29,30 @@ public class BuyPage {
 	}
 	
 	public void selectCity(String cityName) {
-		try {
-			// Click the dropdown to open options
-			wait.until(ExpectedConditions.elementToBeClickable(By.id("searchCity"))).click();
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-			// Wait for options to appear and select the desired city
-			wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//div[contains(@class,'nb-select__menu')]//div[text()='" + cityName + "']"))).click();
+	    // 1. Click the dropdown to activate it
+	    WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(
+	        By.cssSelector("#searchCity .nb-select__control")
+	    ));
+	    dropdown.click();
 
-			extTest.log(Status.PASS, "City selected: " + cityName);
-		} catch (Exception e) {
-			extTest.log(Status.FAIL, "Failed to select city: " + e.getMessage());
-		}
+	    // 2. Wait for the menu to appear
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(
+	        By.cssSelector(".nb-select__menu")
+	    ));
+
+	    // 3. Click the desired option
+	    WebElement option = wait.until(ExpectedConditions.elementToBeClickable(
+	        By.xpath("//div[contains(@class,'nb-select__menu')]//div[text()='" + cityName + "']")
+	    ));
+	    option.click();
+	    
+	    System.out.println("Selected city: " + cityName);
 	}
+
+
+
 	public void enterLocality(String locality) {
 		try {
 			WebElement localityInput = wait
